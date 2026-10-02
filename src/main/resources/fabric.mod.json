@@ -1,0 +1,37 @@
+{
+	"schemaVersion": 1,
+	"id": "unaccurately-correct",
+	"version": "${version}",
+	"name": "Unaccurately Correct",
+	"description": "Discover and Analyze (and so on) realistic stuff - in a not so realistic Game.",
+	"authors": [
+		"Nullpunkt"
+	],
+	"contact": {
+		"homepage": "https://Nullpunktmods.com",
+		"sources": "https://github.com/gauertanton105-commits/Unaccurately-Correct"
+	},
+	"license": "MIT",
+	"icon": "assets/unaccurately-correct/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"net.nullpunkt.uac.UnaccuratelyCorrect"
+		],
+		"fabric-datagen": [
+			"net.nullpunkt.uac.UnaccuratelyCorrectDataGenerator"
+		],
+		"client": [
+			"net.nullpunkt.uac.UaCClient"
+		]
+	},
+	"mixins": [
+		"unaccurately-correct.mixins.json"
+	],
+	"depends": {
+		"fabricloader": ">=0.19.5",
+		"minecraft": "~1.21.1",
+		"java": ">=21",
+		"fabric-api": "*"
+	}
+}
